@@ -1,43 +1,47 @@
-Anscombe
-Introducción Teórica al Cuarteto de Anscombe
+<h1 align="center" style="color:#1E90FF;">Proyecto Anscombe</h1> <h2 align="center">Introducción Teórica al Cuarteto de Anscombe</h2>
 
 Universidad Politécnica Salesiana
+Carrera: Ciencias de la Computación
 Estudiante: Bryam Jesús Peralta Navarro
-Periodo académico: 67
-Carrera: Ciencias de la Computacion
+Periodo Académico: 67
 
-El Cuarteto de Anscombe es un conjunto de cuatro grupos de datos diseñados por el estadístico Francis Anscombe en 1973. Cada grupo presenta valores estadísticos prácticamente idénticos, como la media, la varianza, la correlación y la ecuación de la regresión lineal. Sin embargo, cuando se representan gráficamente, los conjuntos revelan patrones totalmente distintos entre sí.
+Descripción General
 
-Este trabajo se considera un ejemplo clásico de por qué la visualización de datos es esencial en el análisis estadístico. Aunque los cálculos numéricos puedan sugerir resultados similares, las gráficas muestran comportamientos que los números no revelan: distribuciones no lineales, valores atípicos o relaciones engañosas.
+El Cuarteto de Anscombe es un conjunto de cuatro grupos de datos creados por el estadístico Francis Anscombe en 1973.
+Cada grupo presenta valores estadísticos prácticamente idénticos, como la media, la varianza y la correlación, pero al representarlos gráficamente revelan patrones totalmente diferentes.
 
-La lección que deja el Cuarteto de Anscombe es que la estadística descriptiva por sí sola no es suficiente para interpretar correctamente los datos. Es fundamental acompañar el análisis numérico con representaciones visuales que permitan comprender la forma, dispersión y tendencia real de la información.
+Este trabajo demuestra la importancia de la visualización de datos en el análisis estadístico.
+Los cálculos numéricos pueden parecer equivalentes, pero las gráficas muestran comportamientos que los números no evidencian, como distribuciones no lineales, valores atípicos o relaciones engañosas.
 
-A partir de este conjunto se inspiraron posteriores ejercicios como el Datasaurus Dozen, que sigue el mismo principio: distintos patrones visuales con idénticas estadísticas básicas.
+La principal enseñanza del Cuarteto de Anscombe es que la estadística descriptiva por sí sola no es suficiente.
+La visualización permite comprender la forma, la dispersión y la tendencia real de los datos, proporcionando una interpretación más profunda y precisa.
 
-Referencia bibliográfica:
+Este conjunto inspiró el Datasaurus Dozen, un experimento que refuerza la idea de que diferentes patrones visuales pueden compartir estadísticas básicas idénticas.
+
+Referencia Bibliográfica
+
 Anscombe, F. J. (1973). Graphs in Statistical Analysis. The American Statistician, 27(1), 17–21.
 
-Visualización representativa del Cuarteto de Anscombe:
+Visualización Representativa del Cuarteto de Anscombe
+<p align="center"> <img width="420" height="260" src="https://github.com/user-attachments/assets/290938a5-ca6b-456c-9c87-43ce89583698" alt="Cuarteto de Anscombe"> </p>
+<h2 align="center" style="color:#1E90FF;">Estructura del Repositorio</h2>
 
-<img width="400" height="250" src="https://github.com/user-attachments/assets/290938a5-ca6b-456c-9c87-43ce89583698" alt="Cuarteto de Anscombe">
-
-Estructura del Repositorio
-
-El proyecto está organizado en tres carpetas principales. Cada una cumple una función específica dentro del análisis del Cuarteto de Anscombe y del conjunto Datasaurus.
+El proyecto se organiza en tres carpetas principales, cada una con una función específica dentro del análisis del Cuarteto de Anscombe y del conjunto Datasaurus.
 
 Carpeta Data
 
-En esta carpeta se guardan los conjuntos de datos utilizados durante la práctica.
-Aquí se almacenan los archivos con la información original y limpia que se emplea para generar gráficos y realizar los análisis estadísticos.
-Su propósito es centralizar las fuentes de datos de forma ordenada, asegurando que puedan ser reproducidas fácilmente por cualquier usuario que consulte el repositorio.
+Contiene los conjuntos de datos utilizados en la práctica.
+Aquí se almacenan los archivos con la información original que se emplea para generar las gráficas y realizar los análisis estadísticos.
+Su función es mantener los datos ordenados y disponibles para su reproducción en diferentes entornos de trabajo.
 
 Carpeta R
 
-Contiene el código en lenguaje R que se utiliza para visualizar, procesar y analizar los datos.
-Incluye scripts que muestran los trece conjuntos del Datasaurus Dozen, así como las instrucciones para realizar las gráficas y cálculos necesarios.
-Esta carpeta representa la parte técnica del análisis, donde se desarrollan las funciones de lectura, filtrado, graficación y ajuste de modelos.
+Incluye el código en lenguaje R utilizado para procesar, analizar y visualizar los datos.
+En esta carpeta se encuentran los scripts que muestran los trece conjuntos del Datasaurus Dozen, junto con las instrucciones para realizar los cálculos y las gráficas.
+Representa el núcleo técnico del proyecto, donde se desarrollan las operaciones de lectura, filtrado, graficación y modelado.
 
 Carpeta RStudio
 
-Aquí se encuentra el documento creado en R Markdown donde se ejecutó el análisis completo.
-Incluye la regresión lineal aplicada al conjunto seleccionado del Datasaurus (en este caso, el dataset v_lines).
+Contiene el documento elaborado en R Markdown en el entorno RStudio.
+En este archivo se aplicó la regresión lineal al conjunto seleccionado del Datasaurus (v_lines) y se generó el reporte final en formato HTML.
+Esta carpeta integra el código, las visualizaciones y la interpretación teórica en un solo documento reproducible.
