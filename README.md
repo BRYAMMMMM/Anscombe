@@ -21,8 +21,10 @@ Referencia Bibliográfica
 
 Anscombe, F. J. (1973). Graphs in Statistical Analysis. The American Statistician, 27(1), 17–21.
 Visualización Representativa del Cuarteto de Anscombe
+
 <p align="center"> <img width="420" height="260" src="https://github.com/user-attachments/assets/290938a5-ca6b-456c-9c87-43ce89583698" alt="Cuarteto de Anscombe"> </p>
 <h2 align="center" style="color:#1E90FF;">Estructura del Repositorio</h2>
+
 El proyecto se organiza en tres carpetas principales, cada una con una función específica dentro del análisis del Cuarteto de Anscombe y del conjunto Datasaurus.
 Carpeta Data
 
