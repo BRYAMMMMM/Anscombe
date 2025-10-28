@@ -1,0 +1,104 @@
+---
+title: "Mineria de datos"
+author: "bryam"
+date: "2025-10-28"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r cars}
+if (!requireNamespace("datasauRus", quietly = TRUE)) install.packages("datasauRus")
+if (!requireNamespace("dplyr", quietly = TRUE)) install.packages("dplyr")
+if (!requireNamespace("ggplot2", quietly = TRUE)) install.packages("ggplot2")
+
+library(datasauRus)
+library(dplyr)
+library(ggplot2)
+
+# Cargamos el dataset principal
+
+ds <- datasauRus::datasaurus_dozen
+
+# Estructura y primeras filas
+
+str(ds)
+head(ds)
+
+```
+
+
+```{r grafico1}
+# Cargamos el dataset principal
+
+ggplot(ds, aes(x = x, y = y, colour = dataset)) +
+geom_point() +
+theme_void() +
+theme(legend.position = "none") +
+facet_wrap(~dataset, ncol = 3)
+
+
+```
+
+```{r grafico}
+# Lista de todos los conjuntos
+
+conjuntos <- unique(ds$dataset)
+
+# Imprimir un gráfico por cada conjunto
+
+for (d in conjuntos) {
+ddf <- dplyr::filter(ds, dataset == d)
+
+p <- ggplot(ddf, aes(x = x, y = y)) +
+geom_point(color = "steelblue") +
+ggtitle(d) +
+theme_minimal()
+
+print(p)
+}
+
+
+```
+```{r grafico2}
+# Filtrar el conjunto v_lines
+
+v <- dplyr::filter(ds, dataset == "v_lines")
+
+# Ver las primeras filas
+
+head(v)
+
+
+```
+
+```{r grafico3}
+# Ajustar modelo y ~ x
+
+modelo_vlines <- lm(y ~ x, data = v)
+
+# Mostrar resumen estadístico
+
+summary(modelo_vlines)
+
+
+
+```
+
+```{r grafico4}
+ggplot(v, aes(x = x, y = y)) +
+geom_point(color = "darkblue") +
+geom_smooth(method = "lm", se = FALSE, color = "red") +
+coord_equal() +
+theme_minimal() +
+ggtitle("Regresión lineal — dataset: v_lines")
+
+
+```
+
+
+
+
