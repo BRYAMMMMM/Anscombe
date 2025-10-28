@@ -11,3 +11,5 @@ Este experimento demuestra la importancia de la visualización de datos: los nú
 
 Referencia:
 Anscombe, F. J. (1973). Graphs in Statistical Analysis. The American Statistician, 27(1), 17–21.
+
+<img width="286" height="176" alt="imagen" src="https://github.com/user-attachments/assets/290938a5-ca6b-456c-9c87-43ce89583698" />
